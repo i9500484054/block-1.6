@@ -1,0 +1,163 @@
+.service-type {
+	position: relative;
+	@include curtain(166px);
+	&__title {
+		padding: 16px;
+		margin-bottom: 16px;
+		@include text($color-pale-blue, 16px, 24px, 200);
+		text-transform: uppercase;
+
+		background: linear-gradient(270deg, rgb(255, 255, 255),rgb(248, 248, 248));
+		border-top: 1px solid $color-cyan-light;
+	}
+	&__service-list-type-tab {
+		display: none;
+	}
+	&__btn {
+		display: none;
+		position: relative;
+		justify-content: flex-start;
+		align-items: center;
+		padding-left: 32px;
+		margin-left: 16px;
+		margin-bottom: 16px;
+		@include text($color-black-and-blue, 16px, 24px, 400);
+		}
+		&__pagination {
+			position: absolute;
+			top:166px;
+			left: 1px;
+		}
+	}
+
+
+.service-list-type {
+	display: flex;
+	margin-left: 16px;
+	padding-bottom: 100px;
+	&__item {
+		width: 224px;
+		height: 160px;
+		margin-right: 6px;
+		border: 1px solid $color-white-smoky;
+		border-radius: 6px;
+		background-color: $color-white;
+	}
+	&__link {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 16px;
+
+		height: 100%;
+	}
+	&__title {
+		@include text($color-black-and-blue, 16px, 24px, 200);
+	}
+	&__btn {
+		align-self: flex-end;	
+		@include btn;
+		color:$color-radical-red;
+		background-color: $color-white;
+		border: 1px solid $color-radical-red;
+		&:hover {
+			background-color: $color-radical-red;
+			color: $color-white;
+			border: 1px solid $color-radical-red;
+		}
+		
+		&:active {  
+			background-color: $color-white;
+			color: $color-radical-red;
+			border: 1px solid $color-radical-red;
+		}
+	}
+}
+
+@media (min-width: $screen-table) {
+	.service-list-type {
+		margin-left: 24px;
+	}
+	.service-type {
+		&::before {
+			display: none;
+		}
+		&__title {
+			padding-left: 24px;
+		}
+		&__btn {
+			display: flex;
+		}
+	}
+	.service-list-type {
+		display: none;
+	}
+	.service-list-type-tab {
+		max-width: 951px;
+		display: flex;
+		flex-wrap: wrap;
+		height: 165px;
+    overflow: hidden;
+		padding: 0 16px;
+		margin-bottom: 24px;
+		&__item {
+			width: 224px;
+			height: 160px;
+			margin-right: 6px;
+			margin-bottom: 6px;
+			border: 1px solid $color-white-smoky;
+			border-radius: 6px;
+			background-color: $color-white;
+		}
+		&__link {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 16px;
+	
+			height: 100%;
+		}
+		&__title {
+			@include text($color-black-and-blue, 16px, 24px, 200);
+		}
+		&__btn {
+			align-self: flex-end;	
+			@include btn;
+			color:$color-radical-red;
+			background-color: $color-white;
+			border: 1px solid $color-radical-red;
+			&:hover {
+				background-color: $color-radical-red;
+				color: $color-white;
+				border: 1px solid $color-radical-red;
+			}
+			
+			&:active {  
+				background-color: $color-white;
+				color: $color-radical-red;
+				border: 1px solid $color-radical-red;
+			}
+		}
+		&__item--none {
+			display: none;
+		}
+	}
+}
+
+@media (min-width: $screen-desktop) { 
+	.service-list-type {
+		margin-left: 32px;
+	}
+	.service-list-type-tab {
+		padding: 0;
+		margin-left: 32px;
+		&__item--none {
+			display: block;
+		}
+	}
+	.service-type {
+		&__title {
+			padding-left: 32px;
+		}
+	}
+}

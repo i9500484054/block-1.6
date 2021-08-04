@@ -1,0 +1,158 @@
+.cps-header {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 320px;
+	height: 88px;
+	padding: 0 16px;
+
+	background-color: $color-white;
+
+	border-bottom: 1px solid $color-cyan-light;
+	&::after {
+		content: "";
+		
+		position:relative;
+
+		width: 2px;
+		height: 32px;
+		order:3;
+
+		background: $color-white-smoky;
+
+		border-radius: 1px;
+	}
+	&__logo {
+		order:2;
+	}
+	&__fb {
+		order: 4;
+	}
+	&__contacts {
+		display: none;
+	}
+	&__btn {
+		order: 1;
+	}
+}
+
+.cps-logo {
+	&__img {
+		min-width: 97px;
+		min-height: 51px;
+	}
+}
+
+
+.fb-conteiner {
+	display: flex;
+	justify-content: space-between;
+	width: 96px;
+	&__link {
+		@include btn;
+	}
+}
+.contacts-conteiner {
+	&__item {
+		margin-right: 16px;
+	}
+	&__link {
+		@include btn;
+	}
+}
+.btn-open {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	@include btn;
+	&:hover > span::after,
+	&:hover > span::before,
+	&:hover > span {
+		background-color: $color-radical-red;
+	}
+	&:active > span::after,
+	&:active > span::before,
+	&:active > span {
+		background-color: $color-white;
+	}
+	&__elm-btn {
+		position: relative;
+		width: 10px;
+		height: 2px;
+		margin-right: 10px;
+
+		background-color: $color-white;
+		border-radius: 5px;
+		&::after,
+		&::before {
+			content: "";
+
+			position: absolute;
+			left: 0;
+			height: 2px;
+	
+			background-color: $color-white;
+			border-radius: 1px;
+		}
+		&::after{
+			top:5px;
+			width: 14px;
+		}
+		&::before{
+			top:-5px;
+			width: 18px;
+		}
+	}
+}
+
+@media (min-width: $screen-table) { 
+	.cps-header {
+		justify-content: flex-start;
+		padding: 0 24px;
+		&::before {
+			content: "";
+			
+			position: relative;
+	
+			width: 2px;
+			height: 32px;
+			margin: 0 20px;
+			order:2;
+	
+			background: $color-white-smoky;
+	
+			border-radius: 1px;
+		}
+		&::after {
+			margin: 0 20px;
+			order:5;
+		}
+
+		&__logo {
+			order:2;
+			margin-right: auto;
+		}
+
+		&__fb {
+			order: 6;
+		}
+
+		&__contacts {
+			display: flex;
+			order:4;
+		}
+
+		&__btn {
+			order: 1;
+		}		
+	}
+}
+	
+
+@media (min-width: $screen-desktop) {
+	.cps-header {
+		display: none;
+	}
+}

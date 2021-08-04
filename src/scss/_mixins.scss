@@ -1,0 +1,74 @@
+// @include text($color, $font-size, $line-height, $font-weight)
+@mixin text($color, $font-size, $line-height, $font-weight) {
+  color: $color;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+// @include btn
+@mixin btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-radical-red;
+  width: 40px;
+  height: 40px;
+  color:$color-white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition-duration: .5s;
+  &:hover {
+    background-color: $color-white;
+    color: $color-radical-red;
+    border: 1px solid $color-radical-red;
+  }
+  
+  &:active {  
+    background-color: $color-radical-red;
+    color: $color-white;
+    border: 1px solid $color-radical-red;
+  }
+}
+// @include btn-expand
+@mixin btn-expand {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 16px;
+  
+  @include text($color-black-and-blue, 16px, 24px, 400);
+  &::before {
+    font-size: 12px;
+    color: $color-light-cyan;
+    margin-right: 16px;
+  }
+}
+
+// @include flex-center
+@mixin flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+// @include curtain($width)
+@mixin curtain($height) {
+  &::before {
+		content: "";
+
+		position: absolute;
+		right: -1px;
+		top: 67px;
+
+		display: block;
+		width: 24px; 
+		height: $height;
+
+		background: linear-gradient(90deg, rgba(248,248,248,0) 2%, rgba(248,248,248,0.7) 55%, rgba(248,248,248,1) 75%);
+		z-index: 9999;
+	}
+}

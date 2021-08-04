@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Ключевые слова"> 
+	<meta name="description" content="Описание"> 
+	<link rel="stylesheet" href="css/fonts-icons.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />	
+	<link rel="stylesheet" href="css/main.css">
+	<title>Block 1.7/Savinov А.О.</title>
+</head>
+<body>
+
+	<header class="cps-header">
+		<a class="cps-header__logo cps-logo" href="index.html">
+			<picture>
+				<source srcset="img/svg/logo.svg" type="image/svg">
+				<img class="cps-logo__img" src="img/png/logo.png" alt="Логотип CPS" width="97" height="51">
+			</picture>
+		</a>
+		<ul class="cps-header__fb fb-conteiner">
+			<li class="fb-conteiner__item">
+				<button class="fb-conteiner__link fb-conteiner__link-fb button-js-open icon-repair" data-path="one-btn">
+					<span class="fb-conteiner__text visually-hidden">Оставить заявку</span>
+				</button>  
+			</li>
+			<li class="fb-conteiner__item">
+				<button class="fb-conteiner__link fb-conteiner__link-call button-js-open icon-search-header" data-path="two-btn">
+					<span class="fb-conteiner__text visually-hidden">Статус ремонта</span>
+				</button>
+			</li>
+		</ul>
+		<ul class="cps-header__contacts contacts-conteiner">
+			<li class="contacts-conteiner__item">
+				<button class="button-js-open contacts-conteiner__link icon-phone" data-path="three-btn">
+					<span class="visually-hidden">Заказать звонок</span>
+				</button>
+			</li>
+			<li class="contacts-conteiner__item">
+				<button class="button-js-open contacts-conteiner__link icon-chat" data-path="four-btn">
+					<span class="visually-hidden">Начать чат</span>
+				</button>
+			</li> 
+			<li class="contacts-conteiner__item">
+				<button class="button-js-open contacts-conteiner__link icon-profile" data-path="five-btn">
+					<span class="visually-hidden">Вход Личный кабинет</span>
+				</button>
+			</li>
+		</ul>
+		<button class="button-js-open cps-header__btn btn-open" data-path="six-btn">
+			<span class="visually-hidden">Открыть меню</span>
+			<span class="btn-open__elm-btn"></span>
+		</button>
+	</header>
+
+	<aside class="cps-aside blok-js-active" data-target="six-btn">
+		<div class="cps-aside__header">
+			<button class="cps-aside__btn-close button-js-open btn-close" data-path="btn-close-one">
+				<span class="visually-hidden">Закрыть меню</span>
+				<span class="btn-close__elm-btn"></span>
+			</button>
+			<a class="cps-aside__logo cps-logo" href="index.html">
+				<picture>
+					<source srcset="img/svg/logo.svg" type="image/svg">
+					<img class="cps-logo__img" src="img/png/logo.png" alt="Логотип CPS" width="97" height="51">
+				</picture>
+			</a>
+			<button class="cps-aside__search btn-search icon-search-aside button-js-open" data-path="seven-btn">
+				<span class="visually-hidden">поиск</span>
+			</button>
+		</div>
+		<nav class="cps-aside__nav-aside nav-menu">
+			<ul class="nav-menu__list">
+				<li class="nav-menu__item">
+					<a class="nav-menu__link nav-menu__link--active" href="index.html">Ремонт техники</a>
+				</li>
+				<li class="nav-menu__item">
+					<a class="nav-menu__link" href="404.html">Услуги и Сервисы</a>
+				</li>
+				<li class="nav-menu__item">
+					<a class="nav-menu__link" href="404.html">Корпоративным клиенты</a>
+				</li>
+				<li class="nav-menu__item">
+					<a class="nav-menu__link" href="404.html">Продавцам техники</a>
+				</li>
+				<li class="nav-menu__item">
+					<a class="nav-menu__link" href="404.html">Партнерам</a>
+				</li>
+				<li class="nav-menu__item">
+					<a class="nav-menu__link" href="404.html">Производителям</a>
+				</li>
+				<li class="nav-menu__item">
+					<a class="nav-menu__link" href="404.html">Наши сервесные центры</a>
+				</li>
+				<li class="nav-menu__item">
+					<a class="nav-menu__link" href="404.html">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+		<ul class="cps-aside__contacts contacts-conteiner">
+			<li class="contacts-conteiner__item">
+				<button class="button-js-open contacts-conteiner__link icon-phone" data-path="three-btn">
+					<span class="visually-hidden">Заказать звонок</span>
+				</button>
+			</li>
+			<li class="contacts-conteiner__item">
+				<button class="button-js-open contacts-conteiner__link icon-chat" data-path="four-btn">
+					<span class="visually-hidden">Начать чат</span>
+				</button>
+			</li> 
+			<li class="contacts-conteiner__item">
+				<button class="button-js-open contacts-conteiner__link icon-profile" data-path="five-btn">
+					<span class="visually-hidden">Вход Личный кабинет</span>
+				</button>
+			</li>
+		</ul>
+		<ul class="cps-aside__contacts-list contacts-list">
+			<li class="contacts-list__item">
+				<a class="contacts-list__link contacts-list__email" href="mailto:mail@cps.com">mail@cps.com</a>
+			</li>
+			<li class="contacts-list__item">
+				<a class="contacts-list__link contacts-list__phone" href="tel:88008908900">8 800 890 8900</a>
+			</li>
+		</ul>
+		<ul class="cps-aside__language-conteiner language-list">
+			<li class="language-list__item">
+				<a class="language-list__link language-list__link--active" href="index.html">ru</a>
+			</li>
+			<li class="language-list__item">
+				<a class="language-list__link" href="404.html">en</a>
+			</li>
+			<li class="language-list__item">
+				<a class="language-list__link" href="404.html">ch</a>
+			</li>
+		</ul>
+	</aside>
+
+	<main class="cps-main">
+		<h1 class="cps-main__title">Cтраница находится на стадии разработки</h1>
+		<p class="cps-main__text">404</p>
+	</main>
+	
+	<!-- Обратная связь -->
+	<section class="cps-popap cps-popap--none blok-js-active" data-target="one-btn">
+		<h2 class="cps-popap__title">Обратная связь</h2>
+		<form class="cps-popap__fb-form fb-form" action="#" method="POST" enctype="multipart/form-data">
+			<label for="fb-name">
+				<span class="visually-hidden">Имя</span>
+				<input class="fb-form__input" type="text" name="name" placeholder="Имя" required="required" id="fb-name">
+			</label>
+			<label for="fb-phone">
+				<span class="visually-hidden">Телефон</span>
+				<input class="fb-form__input" type="text" name="phone" placeholder="Телефон" required="required" id="fb-phone">
+			</label>
+			<label for="fb-email">
+				<span class="visually-hidden">Элетронная почта</span>
+				<input class="fb-form__input" type="text" name="email" placeholder="Элетронная почта" required="required" id="fb-email">
+			</label>
+			<label for="fb-message">
+				<span class="visually-hidden">Сообщение</span>
+				<textarea class="fb-form__input fb-form__textarea" placeholder="Сообщение" id="fb-message"></textarea>
+			</label>
+			<p class="fb-form__text">
+				Нажимая “отправить”, вы даете согласие на <strong class="fb-form__text--color-radical-red">обработку персональных данных</strong> и соглашаетесь с нашей <a class="fb-form__text--color-radical-red" href="#">политикой конфиденциальности</a>
+			</p>
+			<button class="fb-form__btn icon-dropdown" type="submit">Отправить</button>
+		</form>
+		<button class="cps-popap__btn btn-close button-js-open">
+			<span class="visually-hidden">Закрыть меню</span>
+			<span class="btn-close__elm-btn"></span>
+		</button>
+	</section>
+	<!-- Статус ремонта -->
+	<section class="cps-popap cps-popap--none blok-js-active"  data-target="two-btn">
+		<h2 class="cps-popap__title">Статус ремонта</h2>
+		<form class="cps-popap__fb-form fb-form" action="#" method="POST" enctype="multipart/form-data">
+			<label>
+				<span class="visually-hidden">Телефон</span>
+				<input class="fb-form__input" type="tel" name="phone" placeholder="Телефон" required="required">
+			</label>
+			<p class="fb-form__text">
+				Нажимая “отправить”, вы даете согласие на <strong class="fb-form__text--color-radical-red">обработку персональных данных</strong> и соглашаетесь с нашей <a class="fb-form__text--color-radical-red" href="#" target="_blank">политикой конфиденциальности</a>
+			</p>
+			<button class="fb-form__btn icon-dropdown" type="submit">Отправить</button>
+		</form>
+		<button class="cps-popap__btn btn-close button-js-open">
+			<span class="visually-hidden">Закрыть меню</span>
+			<span class="btn-close__elm-btn"></span>
+		</button>
+	</section>
+	<!-- Заказать звонок -->
+	<section class="cps-popap cps-popap--none blok-js-active"  data-target="three-btn">
+		<h2 class="cps-popap__title">Заказать звонок</h2>
+		<form class="cps-popap__fb-form fb-form" action="#" method="POST" enctype="multipart/form-data">
+			<label>
+				<span class="visually-hidden">Телефон</span>
+				<input class="fb-form__input" type="tel" name="phone" placeholder="Телефон" required="required">
+			</label>
+			<p class="fb-form__text">
+				Нажимая “отправить”, вы даете согласие на <strong class="fb-form__text--color-radical-red">обработку персональных данных</strong> и соглашаетесь с нашей <a class="fb-form__text--color-radical-red" href="#" target="_blank">политикой конфиденциальности</a>
+			</p>
+			<button class="fb-form__btn icon-dropdown" type="submit">Отправить</button>
+		</form>
+		<button class="cps-popap__btn btn-close button-js-open">
+			<span class="visually-hidden">Закрыть меню</span>
+			<span class="btn-close__elm-btn"></span>
+		</button>
+	</section>
+	<!-- Заказать звонок -->
+	<section class="cps-popap cps-popap--none blok-js-active"  data-target="three-btn">
+		<h2 class="cps-popap__title">Заказать звонок</h2>
+		<form class="cps-popap__fb-form fb-form" action="#" method="POST" enctype="multipart/form-data">
+			<label>
+				<span class="visually-hidden">Телефон</span>
+				<input class="fb-form__input" type="tel" name="phone" placeholder="Телефон" required="required">
+			</label>
+			<p class="fb-form__text">
+				Нажимая “отправить”, вы даете согласие на <strong class="fb-form__text--color-radical-red">обработку персональных данных</strong> и соглашаетесь с нашей <a class="fb-form__text--color-radical-red" href="#" target="_blank">политикой конфиденциальности</a>
+			</p>
+			<button class="fb-form__btn icon-dropdown" type="submit">Отправить</button>
+		</form>
+		<button class="cps-popap__btn btn-close button-js-open">
+			<span class="visually-hidden">Закрыть меню</span>
+			<span class="btn-close__elm-btn"></span>
+		</button>
+	</section>
+	<!-- Начать чат -->
+	<section class="cps-popap cps-popap--none blok-js-active"  data-target="four-btn">
+		<h2 class="cps-popap__title">Начать чат</h2>
+		<form class="cps-popap__fb-form fb-form" action="#" method="POST" enctype="multipart/form-data">
+			<label>
+				<span class="visually-hidden">Телефон</span>
+				<input class="fb-form__input" type="tel" name="phone" placeholder="Телефон" required="required">
+			</label>
+			<p class="fb-form__text">
+				Нажимая “отправить”, вы даете согласие на <strong class="fb-form__text--color-radical-red">обработку персональных данных</strong> и соглашаетесь с нашей <a class="fb-form__text--color-radical-red" href="#" target="_blank">политикой конфиденциальности</a>
+			</p>
+			<button class="fb-form__btn icon-dropdown" type="submit">Отправить</button>
+		</form>
+		<button class="cps-popap__btn btn-close button-js-open">
+			<span class="visually-hidden">Закрыть меню</span>
+			<span class="btn-close__elm-btn"></span>
+		</button>
+	</section>
+	<!-- Вход Личный кабинет -->
+	<section class="cps-popap cps-popap--none blok-js-active"  data-target="five-btn">
+		<h2 class="cps-popap__title">Вход Личный кабинетк</h2>
+		<form class="cps-popap__fb-form fb-form" action="#" method="POST" enctype="multipart/form-data">
+			<label>
+				<span class="visually-hidden">Телефон</span>
+				<input class="fb-form__input" type="tel" name="phone" placeholder="Телефон" required="required">
+			</label>
+			<p class="fb-form__text">
+				Нажимая “отправить”, вы даете согласие на <strong class="fb-form__text--color-radical-red">обработку персональных данных</strong> и соглашаетесь с нашей <a class="fb-form__text--color-radical-red" href="#" target="_blank">политикой конфиденциальности</a>
+			</p>
+			<button class="fb-form__btn icon-dropdown" type="submit">Отправить</button>
+		</form>
+		<button class="cps-popap__btn btn-close button-js-open">
+			<span class="visually-hidden">Закрыть меню</span>
+			<span class="btn-close__elm-btn"></span>
+		</button>
+	</section>
+	<!-- Поиск -->
+	<section class="cps-popap cps-popap--none blok-js-active"  data-target="seven-btn">
+		<h2 class="cps-popap__title">Поиск</h2>
+		<form class="cps-popap__fb-form fb-form" action="#" method="POST" enctype="multipart/form-data">
+			<label>
+				<span class="visually-hidden">Телефон</span>
+				<input class="fb-form__input" type="tel" name="phone" placeholder="Телефон" required="required">
+			</label>
+			<p class="fb-form__text">
+				Нажимая “отправить”, вы даете согласие на <strong class="fb-form__text--color-radical-red">обработку персональных данных</strong> и соглашаетесь с нашей <a class="fb-form__text--color-radical-red" href="#" target="_blank">политикой конфиденциальности</a>
+			</p>
+			<button class="fb-form__btn icon-dropdown" type="submit">Отправить</button>
+		</form>
+		<button class="cps-popap__btn btn-close button-js-open">
+			<span class="visually-hidden">Закрыть меню</span>
+			<span class="btn-close__elm-btn"></span>
+		</button>
+	</section>
+
+	<footer class="cps-footer">
+		<ul class="cps-footer__footer-list footer-list">
+			<li class="footer-list__item footer-list__wrapp">
+				<span>&#169; 2019 CPS</span>
+				<span>Разработано командой <a class="footer-list__link" href="https://apesong.ru/" target="_blank">Apesong</a></span>
+			</li>
+			<li class="footer-list__item">
+				<a class="footer-list__link" href="404.html">Политика конфиденциальности</a>
+			</li>
+			<li class="footer-list__item">
+				Информация, размещена на данной странице, не является публичной офертой
+			</li>
+		</ul>	
+	</footer>
+
+	<script src="index.js"></script>
+	<script src="./index.bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/app.js"></script>
+</body>	
+</html>	

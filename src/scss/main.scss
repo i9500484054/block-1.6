@@ -1,0 +1,60 @@
+@import "fonts";
+@import "iconfont";
+@import "normalize";
+@import "variables";
+@import "mixins";
+@import "base";
+
+@import "./components/header";
+@import "./components/aside";
+@import "./components/cps-popap";
+@import "./components/servec-content";
+@import "./components/service-brands";
+@import "./components/service-type";
+@import "./components/service-price";
+@import "./components/footer";
+
+.services-item--active {
+	display: flex;
+}
+
+
+.btn--menu,
+.btn--active{
+	display: flex;
+}
+
+@media (min-width: $screen-table) {
+	.btn--menu,
+	.btn--active{
+		display: flex;
+		z-index: 100;
+		&::before {
+			content: "";
+	
+			position: fixed;
+	
+			top:0;
+			right: 440px;
+			
+			display: block;
+			width: 100vw;
+			height: 100vh;
+	
+			background-color: $color-white;
+			opacity:.8;
+			z-index: 99;
+		}
+	}
+	.btn--menu {
+		&::before {
+		left: 360px;
+		}
+	}
+
+}
+
+.all-open--active {
+	height: 434px;
+	transition: height .7s ease;
+}

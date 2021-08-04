@@ -1,0 +1,183 @@
+.service-brands {
+	position: relative;
+	border-bottom: 1px solid $color-cyan-light;
+	&::before {
+		content: "";
+
+		position: absolute;
+		right: -1px;
+		top: 67px;
+
+		display: block;
+		width: 24px;
+		height: 81px;
+
+		background: linear-gradient(90deg, rgba(248,248,248,0) 2%, rgba(248,248,248,0.742734593837535) 55%, rgba(248,248,248,1) 75%);
+		z-index: 9999;
+	}
+	&__link {
+		display: none;
+	}
+	&__title {
+		padding: 16px;
+		margin-bottom: 16px;
+		@include text($color-pale-blue, 16px, 24px, 200);
+		text-transform: uppercase;
+
+		background: linear-gradient(270deg, rgb(255, 255, 255),rgb(248, 248, 248));
+		border-top: 1px solid $color-cyan-light;
+	}
+	&__container {
+		position: relative;
+		height: 110px;
+		padding-left: 16px;
+		padding-bottom: 32px;
+	}
+	&__pagination {
+		position: absolute;
+		top: 83px;
+	}
+	&__wrapp-tab {
+		display: none;
+	}
+	&__slide-list {
+	}
+	&__btn {
+		display: none;
+	}
+}
+
+.slide-list {
+	display: flex;
+	align-items: center;
+	padding: 0 16px;
+	margin-right: 16px;
+	width: 240px;
+	height: 72px;
+	background-color: $color-white;
+	border: 1px solid $color-white-smoky;
+	border-radius: 6px;
+	&__link {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo {
+	}
+	&__btn {
+		@include btn;
+		color:$color-radical-red;
+		background-color: $color-white;
+		border: 1px solid $color-radical-red;
+		&:hover {
+			background-color: $color-radical-red;
+			color: $color-white;
+			border: 1px solid $color-radical-red;
+		}
+		
+		&:active {  
+			background-color: $color-white;
+			color: $color-radical-red;
+			border: 1px solid $color-radical-red;
+		}
+	}
+}	
+
+@media (min-width: $screen-table) { 
+	.service-brands {
+		&::before {
+			display: none;
+		}
+		&__link {
+			display: inline-block;
+			margin-left: 24px;
+		}
+		&__title {
+			padding-left: 24px;
+		}
+		&__container {
+			display: none;
+		}
+		&__wrapp-tab {
+			display: flex;
+			height: 166px;
+			max-width: 1140px;
+			flex-wrap: wrap;
+			padding-left: 24px;
+			margin-bottom: 24px;
+			overflow: hidden;
+		}
+		&__btn {
+			position: relative;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			padding-left: 32px;
+			margin-bottom: 16px;
+			
+			@include text($color-black-and-blue, 16px, 24px, 400);
+		}
+	}
+	.slide-list-tab {
+		width: 224px;
+		height: 72px;
+		margin-bottom: 16px;
+		display: flex;
+		align-items: center;
+		padding: 0 16px;
+		margin-right: 16px;
+		background-color: $color-white;
+		border: 1px solid $color-white-smoky;
+		border-radius: 6px;
+		&__link {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&__btn {
+			@include btn;
+			color:$color-radical-red;
+			background-color: $color-white;
+			border: 1px solid $color-radical-red;
+			&:hover {
+				background-color: $color-radical-red;
+				color: $color-white;
+				border: 1px solid $color-radical-red;
+			}
+			
+			&:active {  
+				background-color: $color-white;
+				color: $color-radical-red;
+				border: 1px solid $color-radical-red;
+			}	
+		}
+	}
+}
+
+@media (min-width: $screen-desktop) { 
+	.service-brands {
+		
+		&__link {
+			margin-left: 32px;
+		}
+		&__title {
+			padding-left: 32px;
+		}
+		&__container {
+
+		}
+		&__pagination {
+
+		}
+		&__wrapp-tab {
+			padding-left: 32px;
+		}
+		&__slide-list {
+		}
+		&__btn {
+
+		}
+	}
+}

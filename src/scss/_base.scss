@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  outline: none;
+  &:focus {
+    outline: 1px solid $color-light-cyan;
+  }
+}
+
+body {
+  font-family: $font-family-global; 
+  margin: 0 auto;
+  background-color: $color-smoky-white;
+}
+
+h1,h2,h3,h4,h5 {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input,
+textarea,
+fieldset {
+  border: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+input,
+textarea,
+fieldset {
+  border: none;
+}
+
+textarea {
+  resize : none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+input::-webkit-input-placeholder {@include text($color-Cadet-blue-crayola, 16px, 24px, 500)}
+input::-moz-placeholder  {@include text($color-Cadet-blue-crayola, 16px, 24px, 500)}
+input:-moz-placeholder   {@include text($color-Cadet-blue-crayola, 16px, 24px, 500)}
+input:-ms-input-placeholder {@include text($color-Cadet-blue-crayola, 16px, 24px, 500)}
+
+
+.swiper-pagination-bullet {
+  background-color: $color-Cadet-blue-crayola;
+}
+
+.cps-main {
+  &__title {
+    font-size: 36px;
+    text-align: center;
+    padding: 150px 0 100px;
+  }
+  &__text {
+    text-align: center;
+    font-size: 86px;
+    padding: 100px 0 200px;
+  }
+}
+
+@media (min-width: $screen-table) {
+  .cps-main {
+    background-color: $color-white;
+  }
+}
+@media (min-width: $screen-desktop) {
+  .cps-main {
+    padding-left: 345px;
+    padding-right: 33px;
+    background-color: $color-smoky-white;
+  }
+}

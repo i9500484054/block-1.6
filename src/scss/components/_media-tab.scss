@@ -1,0 +1,75 @@
+@media (min-width: $screen-table) {
+	.main-container {
+		flex-direction: row;
+		justify-content: center;
+		&__form-bg {
+			flex-basis: 50%;
+		}
+		&__form-container {
+			flex-basis: 50%;
+		}
+	}
+}
+
+@media (min-width: $screen-desktop) {
+	.main-container {
+		padding: 5%;
+	}
+	.main-form {
+		padding: 0;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.form-container {
+		padding: 100px 30px;
+		padding-right: 10px;
+		&__title-wrap {
+			text-align: left;
+		}
+		&__title {
+			font-size: 32px;
+		}
+	}
+	.list-reg {
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		&__btn {
+			margin-bottom: 0px;
+		}
+	}	
+	.list-contact {
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+
+	}
+	.main-form {
+		max-width: 555px;
+		&__element {
+			align-self: center;
+		}
+		&__title-wrap {
+			text-align: left;
+		}
+	}
+	.list-investor {
+		&__label {
+			margin-right: 50px;
+			@include text(var(--color-basic-text), 16px,18px,500);
+			&::after {
+				content: "";
+	
+				position: absolute;
+				top: 5px;
+				right: -15px;
+		
+				width: 10px;
+				height: 10px;
+	
+				
+				@include bg-img(transparent, url("../img/coolicon.svg"))
+			}
+		}
+	}
+}
