@@ -42,8 +42,8 @@ document.querySelectorAll('.service-brands__link').forEach(function(tabsBtn) {
 	tabsBtn.addEventListener('click', function(event) {
 		let path = event.currentTarget.dataset.path
 
-		document.querySelector(`[data-target="${path}"]`).classList.add('all-open--active')
-
+		document.querySelector(`[data-target="${path}"]`).classList.toggle('all-open--active')
+		
 		})
 	})
 

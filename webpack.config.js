@@ -26,8 +26,7 @@ module.exports = {
 		new CopyWebpackPlugin({
 			patterns: [
 				{from: path.resolve(__dirname, 'src/img'), to:path.resolve(__dirname, 'dist/img')},
-				{from: path.resolve(__dirname, 'src/fonts'), to:path.resolve(__dirname, 'dist/fonts')},
-				{from: path.resolve(__dirname, 'src/test'), to:path.resolve(__dirname, 'dist/css')}
+				{from: path.resolve(__dirname, 'src/test'), to:path.resolve(__dirname, 'dist/test')}
 			]
 		}),
 	],
@@ -46,6 +45,10 @@ module.exports = {
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
+      },
+      {
+        test: /\.(ttf|woff|woff|oet)$/,
+        use: ['file-loader'],
       },
     ],
   },
